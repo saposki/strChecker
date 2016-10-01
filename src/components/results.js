@@ -1,7 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class Results extends Component {
 
-}
+const Results = (props) => {
+// console.log(props);
+  return (
+    <ul className="col-md-4 list-group">
+    </ul>
+  );
+};
 
-export default Results
+export default Results;
