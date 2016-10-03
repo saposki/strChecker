@@ -1,7 +1,11 @@
+.btn-primary{
+  border-color: #D9D9D9;
+  background-color: #D9D9D9;
+}
+
 .btn-info{
   margin-left: 20px;
   margin-top: 5px;
-  background-color: #FFFFFF;
 }
 
 
@@ -10,5 +14,7 @@ ul{
 }
 
 .btn-success {
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
+  color: #000;
+  background-color: #D9D9D9;
 }
