@@ -20,6 +20,7 @@ class Input extends Component {
           <ul>{Object.keys(this.state.term).map((i) => (
             <ul className="btn btn-info" >
               <li className="btn btn-success">{i}</li>
+              <br/>
               <li className="btn btn-success">{this.state.term[i]}</li>
           </ul>
         ))}

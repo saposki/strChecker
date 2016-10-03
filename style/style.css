@@ -1,12 +1,14 @@
 .btn-info{
   margin-left: 20px;
   margin-top: 5px;
+  background-color: #FFFFFF;
 }
 
 
-ul {
+ul{
   padding-left: 0px;
 }
 
 .btn-success {
+  margin-bottom: 10px; 
 }
