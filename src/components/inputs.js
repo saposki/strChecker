@@ -9,13 +9,6 @@ class Input extends Component {
 
 
   render () {
-      let message = <div className={this.state.term}></div>
-      let arr = []
-
-      Object.keys(message).map(function(key) {
-        arr.push(key)
-      });
-
         return (
         <form>
           <div className="col-xs-3">
@@ -24,8 +17,7 @@ class Input extends Component {
               onChange={eventObject => this.setState({ term: eventObject.target.value })} type="text" name="myInput" className="form-control" placeholder="Type of Paste a String" ></input>
           </div>
           <input onClick={this.handleClick} type="button" className="btn btn-primary" value="check"></input>
-          <ul message={message}>
-          {Object.keys(message).map()}
+          <ul>{Object.keys(this.state.term).map((i) => (<li>{i}:{this.state.term[i]}</li>))}
           </ul>
         </form>
       );
