@@ -5,7 +5,6 @@ import ReactDOM from 'react-dom';
 import Input from './components/inputs';
 import Results from './components/results';
 
-
 class App extends Component {
   constructor(props){
   super(props);
@@ -15,7 +14,7 @@ class App extends Component {
     return (
       <div>
         <Input />
-        <Results/>
+        <Results />
       </div>
     );
   }

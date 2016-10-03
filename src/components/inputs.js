@@ -9,7 +9,14 @@ class Input extends Component {
 
 
   render () {
-      return (
+      let message = <div className={this.state.term}></div>
+      let arr = []
+
+      Object.keys(message).map(function(key) {
+        arr.push(key)
+      });
+
+        return (
         <form>
           <div className="col-xs-3">
             <input
@@ -17,6 +24,9 @@ class Input extends Component {
               onChange={eventObject => this.setState({ term: eventObject.target.value })} type="text" name="myInput" className="form-control" placeholder="Type of Paste a String" ></input>
           </div>
           <input onClick={this.handleClick} type="button" className="btn btn-primary" value="check"></input>
+          <ul message={message}>
+          {Object.keys(message).map()}
+          </ul>
         </form>
       );
   }
@@ -37,10 +47,7 @@ class Input extends Component {
       return obj;
     }
     // end of function
-    this.setState(unique(string));
-    this.state = {term: ''}
-    this.props = unique(string)
-    console.log(this.props);
+    this.setState({term: unique(string)});
   }
 
 }
